@@ -30,7 +30,7 @@
 <dependecy>
     <groupId>et.telebof</groupId>
     <artifactId>telegrambot</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.2</version>
 </dependecy>
 
 ```
@@ -140,21 +140,21 @@ of telegram `Message` update.
 - `chat_id` is an optional parameter, which means that you can pass its value or its value will be passed from `Message`
 object which was received from telegram.
 ```java
-client.sendMessage(message.getChat().getId(), "Hello, World!").bind();
+ctx.sendMessage(message.getChat().getId(), "Hello, World!").bind();
 
 // You can also specify yours
-client.sendMessage(123456789L, "Hello, World!").bind();
-client.sendMessage("@chatUsername", "Hello, World!").bind();
+ctx.sendMessage(123456789L, "Hello, World!").bind();
+ctx.sendMessage("@chatUsername", "Hello, World!").bind();
 
 // Or it's chat_id is passed from the message update received from telegram
-client.sendMessage("Hello, World!").bind();
+ctx.sendMessage("Hello, World!").bind();
 ```
 - `bind()` is an enclosing and request sender method. This means that before ending and sending request, you can pass 
 optional parameters and then send a request to telegram. For example `sendMessage` method has optional parameters like: 
 `parseMode`, `replyMarkup`. So you can pass their value for these parameters and send request to telegram.
 
 ```java
-client.sendMessage("*Hello, World*").parseMode(ParseMode.MARKDOWN).bind();
+ctx.sendMessage("*Hello, World*").parseMode(ParseMode.MARKDOWN).bind();
 ```
 
 Finally we start our bot by using `start()` which does not take any parameter and run our bot via **long polling.** 
@@ -338,10 +338,10 @@ client.onMessage(filter -> filter.PRIVATE && (filter.AUDIO || filter.VIDEO), new
 });
 
 ```
-### Defining your own filter
-You can define your own filter using `filter.customFilter`.
+### Writing your own filter
+You can write your own filter using `filter.customFilter`.
 
-This example will show you how you can define filters using `et.telebof.filters.CustomFilter` and `filter.customFilter`.
+This example will show you how you can write filters using `et.telebof.filters.CustomFilter` and `filter.customFilter`.
 
 ```java
 import et.telebof.TelegramContext;
@@ -430,14 +430,14 @@ client.onInline(filter -> filter.inlineQuery("hello"), new InlineHandler() {
 ```
 
 ### Conversational Filter
-There is another special filter to make conversations with bot called `filter.state`.
+There is another special filter to make conversations with a bot called `filter.state`.
 
 ```java
 client.onMessage(filter -> filter.commands("start"), new MessageHandler() {
   @Override
   public void handle(TelegramContext ctx, Message message) {
     ctx.sendMessage("What is your name?").bind();
-    ctx.setState("name"); // set our state to `name`. You can set whatever
+    ctx.setState(message.getFrom().getId(), "name"); // set our state to `name`. You can set whatever
   }
 });
 
@@ -445,7 +445,7 @@ client.onMessage(filter -> filter.state("name") && filter.TEXT, new MessageHandl
   @Override
   public void handle(TelegramContext ctx, Message message) {
     ctx.sendMessage(String.format("Your name is %s", message.getText()));
-    ctx.clearState();
+    ctx.clearState(message.getFrom().getId());
   }
 });
 ```
@@ -462,7 +462,7 @@ markup.add("A", "B", "C"); // You can add String or
 markup.add("D", "E"); 
 markup.add(new KeyboardButton("F")); // KeybaordButton class
 
-client.sendMssage("Hello, World!").replyMarkup(markup).bind();
+ctx.sendMssage("Hello, World!").replyMarkup(markup).bind();
 ```
 
 ### InlineKeyboardMarkup
@@ -498,17 +498,17 @@ InlineKeybaordMarkup inlineMarkup = new InlineKeybaordMarkup(new InlineKeybaordB
   } 
 )
 
-client.sendMessage("Press one button").replyMarkup(inlineMarkup).bind();
+ctx.sendMessage("Press one button").replyMarkup(inlineMarkup).bind();
 ```
 
 ### ForceReply
 ```java
-client.sendMessage("Can you tell me your name please?").replyMarkup(new ForceReply()).bind(); // ForceReply markup
+ctx.sendMessage("Can you tell me your name please?").replyMarkup(new ForceReply()).bind(); // ForceReply markup
 ```
 
 ### RemoveReplyKeyboard
 ```java
-client.sendMessage("There is no reply keyboard now").replyMarkup(new RemoveReplyKeybaord()).bind(); 
+ctx.sendMessage("There is no reply keyboard now").replyMarkup(new RemoveReplyKeybaord()).bind(); 
 ```
 
 
@@ -537,7 +537,7 @@ class MyWebhookBot{
 ```java
 import et.telebof.BotClient;
 
-String url = "https://example.com/";
+String url = "https://example.com/bot%s/%s";
 BotClient client = new BotClient.Builder("<TOKEN>")
         .localBotApiUrl(url)
         .build();
