@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="de2cfa62-3106-4a67-9833-71a4f58b097e" name="Changes" comment="Fix">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/et/telebof/requests/RequestSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/et/telebof/requests/RequestSender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/et/telebof/types/PollAnswer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/et/telebof/types/PollAnswer.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="main" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="TAG">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="v1.0.0" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="rebuild-v1" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="3B4JZqwRWyQ0Yghw0elrm1cwfMb" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/OldTelebof",
+    "to.speed.mode.migration.done": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="OldTelebof" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="OldTelebof" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.30387.90" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="de2cfa62-3106-4a67-9833-71a4f58b097e" name="Changes" comment="" />
+      <created>1773742467813</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1773742467813</updated>
+    </task>
+    <task id="LOCAL-00262" summary="Feat: add Se class">
+      <option name="closed" value="true" />
+      <created>1688784794214</created>
+      <option name="number" value="00262" />
+      <option name="presentableId" value="LOCAL-00262" />
+      <option name="project" value="LOCAL" />
+      <updated>1688784794214</updated>
+    </task>
+    <task id="LOCAL-00263" summary="Feat: add SetStickerMaskPosition class">
+      <option name="closed" value="true" />
+      <created>1688784804236</created>
+      <option name="number" value="00263" />
+      <option name="presentableId" value="LOCAL-00263" />
+      <option name="project" value="LOCAL" />
+      <updated>1688784804236</updated>
+    </task>
+    <task id="LOCAL-00264" summary="Feat: add SetStickerSetThumbnail class">
+      <option name="closed" value="true" />
+      <created>1688784818979</created>
+      <option name="number" value="00264" />
+      <option name="presentableId" value="LOCAL-00264" />
+      <option name="project" value="LOCAL" />
+      <updated>1688784818979</updated>
+    </task>
+    <task id="LOCAL-00265" summary="Feat: add SetStickerSetTitle class">
+      <option name="closed" value="true" />
+      <created>1688871231854</created>
+      <option name="number" value="00265" />
+      <option name="presentableId" value="LOCAL-00265" />
+      <option name="project" value="LOCAL" />
+      <updated>1688871231854</updated>
+    </task>
+    <task id="LOCAL-00266" summary="Feat: add SetWebhook class">
+      <option name="closed" value="true" />
+      <created>1688871240305</created>
+      <option name="number" value="00266" />
+      <option name="presentableId" value="LOCAL-00266" />
+      <option name="project" value="LOCAL" />
+      <updated>1688871240305</updated>
+    </task>
+    <task id="LOCAL-00267" summary="Feat: add S class">
+      <option name="closed" value="true" />
+      <created>1688957659293</created>
+      <option name="number" value="00267" />
+      <option name="presentableId" value="LOCAL-00267" />
+      <option name="project" value="LOCAL" />
+      <updated>1688957659293</updated>
+    </task>
+    <task id="LOCAL-00268" summary="Feat: add StopMessageLiveLocation class">
+      <option name="closed" value="true" />
+      <created>1688957669643</created>
+      <option name="number" value="00268" />
+      <option name="presentableId" value="LOCAL-00268" />
+      <option name="project" value="LOCAL" />
+      <updated>1688957669643</updated>
+    </task>
+    <task id="LOCAL-00269" summary="Feat: add StopPoll class">
+      <option name="closed" value="true" />
+      <created>1689044083591</created>
+      <option name="number" value="00269" />
+      <option name="presentableId" value="LOCAL-00269" />
+      <option name="project" value="LOCAL" />
+      <updated>1689044083591</updated>
+    </task>
+    <task id="LOCAL-00270" summary="Feat: add TelegramApiException class">
+      <option name="closed" value="true" />
+      <created>1689044092087</created>
+      <option name="number" value="00270" />
+      <option name="presentableId" value="LOCAL-00270" />
+      <option name="project" value="LOCAL" />
+      <updated>1689044092087</updated>
+    </task>
+    <task id="LOCAL-00271" summary="Feat: add TelegramContext class">
+      <option name="closed" value="true" />
+      <created>1689130511118</created>
+      <option name="number" value="00271" />
+      <option name="presentableId" value="LOCAL-00271" />
+      <option name="project" value="LOCAL" />
+      <updated>1689130511118</updated>
+    </task>
+    <task id="LOCAL-00272" summary="Feat: add TelegramError class">
+      <option name="closed" value="true" />
+      <created>1689216925250</created>
+      <option name="number" value="00272" />
+      <option name="presentableId" value="LOCAL-00272" />
+      <option name="project" value="LOCAL" />
+      <updated>1689216925250</updated>
+    </task>
+    <task id="LOCAL-00273" summary="Feat: add UnbanChatMember class">
+      <option name="closed" value="true" />
+      <created>1689303337437</created>
+      <option name="number" value="00273" />
+      <option name="presentableId" value="LOCAL-00273" />
+      <option name="project" value="LOCAL" />
+      <updated>1689303337437</updated>
+    </task>
+    <task id="LOCAL-00274" summary="Feat: add Un class">
+      <option name="closed" value="true" />
+      <created>1689389769888</created>
+      <option name="number" value="00274" />
+      <option name="presentableId" value="LOCAL-00274" />
+      <option name="project" value="LOCAL" />
+      <updated>1689389769888</updated>
+    </task>
+    <task id="LOCAL-00275" summary="Feat: add UnHideGeneralForumTopic class">
+      <option name="closed" value="true" />
+      <created>1689476183823</created>
+      <option name="number" value="00275" />
+      <option name="presentableId" value="LOCAL-00275" />
+      <option name="project" value="LOCAL" />
+      <updated>1689476183824</updated>
+    </task>
+    <task id="LOCAL-00276" summary="Feat: add UnpinAllChatMessages class">
+      <option name="closed" value="true" />
+      <created>1689562597222</created>
+      <option name="number" value="00276" />
+      <option name="presentableId" value="LOCAL-00276" />
+      <option name="project" value="LOCAL" />
+      <updated>1689562597222</updated>
+    </task>
+    <task id="LOCAL-00277" summary="Feat: add UnpinAllForumTopicMessages class">
+      <option name="closed" value="true" />
+      <created>1689649012552</created>
+      <option name="number" value="00277" />
+      <option name="presentableId" value="LOCAL-00277" />
+      <option name="project" value="LOCAL" />
+      <updated>1689649012552</updated>
+    </task>
+    <task id="LOCAL-00278" summary="Feat: add UnpinChatMessage class">
+      <option name="closed" value="true" />
+      <created>1689735453714</created>
+      <option name="number" value="00278" />
+      <option name="presentableId" value="LOCAL-00278" />
+      <option name="project" value="LOCAL" />
+      <updated>1689735453714</updated>
+    </task>
+    <task id="LOCAL-00279" summary="Feat: add UnRestrictChatMember class">
+      <option name="closed" value="true" />
+      <created>1689821862990</created>
+      <option name="number" value="00279" />
+      <option name="presentableId" value="LOCAL-00279" />
+      <option name="project" value="LOCAL" />
+      <updated>1689821862990</updated>
+    </task>
+    <task id="LOCAL-00280" summary="Feat: add UploadStickerFile class">
+      <option name="closed" value="true" />
+      <created>1689908279262</created>
+      <option name="number" value="00280" />
+      <option name="presentableId" value="LOCAL-00280" />
+      <option name="project" value="LOCAL" />
+      <updated>1689908279262</updated>
+    </task>
+    <task id="LOCAL-00281" summary="Feat: add Util class">
+      <option name="closed" value="true" />
+      <created>1689994690670</created>
+      <option name="number" value="00281" />
+      <option name="presentableId" value="LOCAL-00281" />
+      <option name="project" value="LOCAL" />
+      <updated>1689994690670</updated>
+    </task>
+    <task id="LOCAL-00282" summary="Feat: add Webhook class">
+      <option name="closed" value="true" />
+      <created>1690081102015</created>
+      <option name="number" value="00282" />
+      <option name="presentableId" value="LOCAL-00282" />
+      <option name="project" value="LOCAL" />
+      <updated>1690081102015</updated>
+    </task>
+    <task id="LOCAL-00283" summary="Feat: add WebhookInfo class">
+      <option name="closed" value="true" />
+      <created>1690167512097</created>
+      <option name="number" value="00283" />
+      <option name="presentableId" value="LOCAL-00283" />
+      <option name="project" value="LOCAL" />
+      <updated>1690167512097</updated>
+    </task>
+    <task id="LOCAL-00284" summary="Feat: add WriteAccessAllowed class">
+      <option name="closed" value="true" />
+      <created>1690253926718</created>
+      <option name="number" value="00284" />
+      <option name="presentableId" value="LOCAL-00284" />
+      <option name="project" value="LOCAL" />
+      <updated>1690253926718</updated>
+    </task>
+    <task id="LOCAL-00285" summary="Feat: add CallbackHandler interface">
+      <option name="closed" value="true" />
+      <created>1690340359686</created>
+      <option name="number" value="00285" />
+      <option name="presentableId" value="LOCAL-00285" />
+      <option name="project" value="LOCAL" />
+      <updated>1690340359686</updated>
+    </task>
+    <task id="LOCAL-00286" summary="Feat: add ChannelPostHandler interface">
+      <option name="closed" value="true" />
+      <created>1690426770948</created>
+      <option name="number" value="00286" />
+      <option name="presentableId" value="LOCAL-00286" />
+      <option name="project" value="LOCAL" />
+      <updated>1690426770948</updated>
+    </task>
+    <task id="LOCAL-00287" summary="Feat: add ChatMemberHandler interface">
+      <option name="closed" value="true" />
+      <created>1690513183151</created>
+      <option name="number" value="00287" />
+      <option name="presentableId" value="LOCAL-00287" />
+      <option name="project" value="LOCAL" />
+      <updated>1690513183151</updated>
+    </task>
+    <task id="LOCAL-00288" summary="Feat: add ChatJoinRequestHandler interface">
+      <option name="closed" value="true" />
+      <created>1690599593615</created>
+      <option name="number" value="00288" />
+      <option name="presentableId" value="LOCAL-00288" />
+      <option name="project" value="LOCAL" />
+      <updated>1690599593615</updated>
+    </task>
+    <task id="LOCAL-00289" summary="Feat: add ChosenInlineResultHandler interface">
+      <option name="closed" value="true" />
+      <created>1690686012421</created>
+      <option name="number" value="00289" />
+      <option name="presentableId" value="LOCAL-00289" />
+      <option name="project" value="LOCAL" />
+      <updated>1690686012421</updated>
+    </task>
+    <task id="LOCAL-00290" summary="Feat: add CustomFilter interface">
+      <option name="closed" value="true" />
+      <created>1690772431630</created>
+      <option name="number" value="00290" />
+      <option name="presentableId" value="LOCAL-00290" />
+      <option name="project" value="LOCAL" />
+      <updated>1690772431630</updated>
+    </task>
+    <task id="LOCAL-00291" summary="Feat: add EditedChannelPostHandler interface">
+      <option name="closed" value="true" />
+      <created>1690858845558</created>
+      <option name="number" value="00291" />
+      <option name="presentableId" value="LOCAL-00291" />
+      <option name="project" value="LOCAL" />
+      <updated>1690858845559</updated>
+    </task>
+    <task id="LOCAL-00292" summary="Feat: add EditedMessageHandler interface">
+      <option name="closed" value="true" />
+      <created>1690945266312</created>
+      <option name="number" value="00292" />
+      <option name="presentableId" value="LOCAL-00292" />
+      <option name="project" value="LOCAL" />
+      <updated>1690945266312</updated>
+    </task>
+    <task id="LOCAL-00293" summary="Feat: add FilterExecutor interface">
+      <option name="closed" value="true" />
+      <created>1691031735983</created>
+      <option name="number" value="00293" />
+      <option name="presentableId" value="LOCAL-00293" />
+      <option name="project" value="LOCAL" />
+      <updated>1691031735983</updated>
+    </task>
+    <task id="LOCAL-00294" summary="Feat: add InlineHandler interface">
+      <option name="closed" value="true" />
+      <created>1691118150352</created>
+      <option name="number" value="00294" />
+      <option name="presentableId" value="LOCAL-00294" />
+      <option name="project" value="LOCAL" />
+      <updated>1691118150352</updated>
+    </task>
+    <task id="LOCAL-00295" summary="Feat: add MessageHandler interface">
+      <option name="closed" value="true" />
+      <created>1691204562694</created>
+      <option name="number" value="00295" />
+      <option name="presentableId" value="LOCAL-00295" />
+      <option name="project" value="LOCAL" />
+      <updated>1691204562694</updated>
+    </task>
+    <task id="LOCAL-00296" summary="Feat: add MyChatMemberHandler interface">
+      <option name="closed" value="true" />
+      <created>1691290975447</created>
+      <option name="number" value="00296" />
+      <option name="presentableId" value="LOCAL-00296" />
+      <option name="project" value="LOCAL" />
+      <updated>1691290975447</updated>
+    </task>
+    <task id="LOCAL-00297" summary="Feat: add PollAnswerHandler interface">
+      <option name="closed" value="true" />
+      <created>1691377394157</created>
+      <option name="number" value="00297" />
+      <option name="presentableId" value="LOCAL-00297" />
+      <option name="project" value="LOCAL" />
+      <updated>1691377394157</updated>
+    </task>
+    <task id="LOCAL-00298" summary="Feat: add PollHandler interface">
+      <option name="closed" value="true" />
+      <created>1691463806580</created>
+      <option name="number" value="00298" />
+      <option name="presentableId" value="LOCAL-00298" />
+      <option name="project" value="LOCAL" />
+      <updated>1691463806580</updated>
+    </task>
+    <task id="LOCAL-00299" summary="Feat: add PreCheckoutHandler interface">
+      <option name="closed" value="true" />
+      <created>1691550223875</created>
+      <option name="number" value="00299" />
+      <option name="presentableId" value="LOCAL-00299" />
+      <option name="project" value="LOCAL" />
+      <updated>1691550223875</updated>
+    </task>
+    <task id="LOCAL-00300" summary="Feat: add Filter class">
+      <option name="closed" value="true" />
+      <created>1691636640353</created>
+      <option name="number" value="00300" />
+      <option name="presentableId" value="LOCAL-00300" />
+      <option name="project" value="LOCAL" />
+      <updated>1691636640353</updated>
+    </task>
+    <task id="LOCAL-00301" summary="Feat: add ShippingHandler interface">
+      <option name="closed" value="true" />
+      <created>1691636655154</created>
+      <option name="number" value="00301" />
+      <option name="presentableId" value="LOCAL-00301" />
+      <option name="project" value="LOCAL" />
+      <updated>1691636655154</updated>
+    </task>
+    <task id="LOCAL-00302" summary="Feat: add BotClient interface">
+      <option name="closed" value="true" />
+      <created>1691723071518</created>
+      <option name="number" value="00302" />
+      <option name="presentableId" value="LOCAL-00302" />
+      <option name="project" value="LOCAL" />
+      <updated>1691723071518</updated>
+    </task>
+    <task id="LOCAL-00303" summary="Feat: add BotClient class">
+      <option name="closed" value="true" />
+      <created>1691723133181</created>
+      <option name="number" value="00303" />
+      <option name="presentableId" value="LOCAL-00303" />
+      <option name="project" value="LOCAL" />
+      <updated>1691723133181</updated>
+    </task>
+    <task id="LOCAL-00304" summary="Feat: add .gitignore">
+      <option name="closed" value="true" />
+      <created>1691809551827</created>
+      <option name="number" value="00304" />
+      <option name="presentableId" value="LOCAL-00304" />
+      <option name="project" value="LOCAL" />
+      <updated>1691809551827</updated>
+    </task>
+    <task id="LOCAL-00305" summary="Version 1.0.0">
+      <option name="closed" value="true" />
+      <created>1691809574182</created>
+      <option name="number" value="00305" />
+      <option name="presentableId" value="LOCAL-00305" />
+      <option name="project" value="LOCAL" />
+      <updated>1691809574182</updated>
+    </task>
+    <task id="LOCAL-00306" summary="Version 1.0.0">
+      <option name="closed" value="true" />
+      <created>1691895990130</created>
+      <option name="number" value="00306" />
+      <option name="presentableId" value="LOCAL-00306" />
+      <option name="project" value="LOCAL" />
+      <updated>1691895990130</updated>
+    </task>
+    <task id="LOCAL-00307" summary="Version 1.0.0">
+      <option name="closed" value="true" />
+      <created>1774668476164</created>
+      <option name="number" value="00307" />
+      <option name="presentableId" value="LOCAL-00307" />
+      <option name="project" value="LOCAL" />
+      <updated>1774668476164</updated>
+    </task>
+    <task id="LOCAL-00308" summary="Fix">
+      <option name="closed" value="true" />
+      <created>1692041656152</created>
+      <option name="number" value="00308" />
+      <option name="presentableId" value="LOCAL-00308" />
+      <option name="project" value="LOCAL" />
+      <updated>1692041656152</updated>
+    </task>
+    <task id="LOCAL-00309" summary="Fix">
+      <option name="closed" value="true" />
+      <created>1692041704995</created>
+      <option name="number" value="00309" />
+      <option name="presentableId" value="LOCAL-00309" />
+      <option name="project" value="LOCAL" />
+      <updated>1692041704995</updated>
+    </task>
+    <task id="LOCAL-00310" summary="Fix">
+      <option name="closed" value="true" />
+      <created>1692041712028</created>
+      <option name="number" value="00310" />
+      <option name="presentableId" value="LOCAL-00310" />
+      <option name="project" value="LOCAL" />
+      <updated>1692041712028</updated>
+    </task>
+    <option name="localTasksCounter" value="311" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Feat: add Webhook class" />
+    <MESSAGE value="Feat: add WebhookInfo class" />
+    <MESSAGE value="Feat: add WriteAccessAllowed class" />
+    <MESSAGE value="Feat: add CallbackHandler interface" />
+    <MESSAGE value="Feat: add ChannelPostHandler interface" />
+    <MESSAGE value="Feat: add ChatMemberHandler interface" />
+    <MESSAGE value="Feat: add ChatJoinRequestHandler interface" />
+    <MESSAGE value="Feat: add ChosenInlineResultHandler interface" />
+    <MESSAGE value="Feat: add CustomFilter interface" />
+    <MESSAGE value="Feat: add EditedChannelPostHandler interface" />
+    <MESSAGE value="Feat: add EditedMessageHandler interface" />
+    <MESSAGE value="Feat: add FilterExecutor interface" />
+    <MESSAGE value="Feat: add InlineHandler interface" />
+    <MESSAGE value="Feat: add MessageHandler interface" />
+    <MESSAGE value="Feat: add MyChatMemberHandler interface" />
+    <MESSAGE value="Feat: add PollAnswerHandler interface" />
+    <MESSAGE value="Feat: add PollHandler interface" />
+    <MESSAGE value="Feat: add PreCheckoutHandler interface" />
+    <MESSAGE value="Feat: add Filter class" />
+    <MESSAGE value="Feat: add ShippingHandler interface" />
+    <MESSAGE value="Feat: add BotClient interface" />
+    <MESSAGE value="Feat: add BotClient class" />
+    <MESSAGE value="Feat: add .gitignore" />
+    <MESSAGE value="Version 1.0.0" />
+    <MESSAGE value="Fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix" />
+  </component>
+</project>
