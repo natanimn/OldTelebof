@@ -8,6 +8,7 @@ public class PollAnswer implements Serializable {
     private User user;
     private List<Integer> options_id;
 
+
     public String getPollId() {
         return poll_id;
     }
