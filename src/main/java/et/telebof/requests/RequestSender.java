@@ -3,7 +3,7 @@ package et.telebof.requests;
 import com.google.gson.Gson;
 import et.telebof.ApiResponse;
 import et.telebof.BotLog;
-import et.telebof.Parser;
+import et.telebof.Util;
 import et.telebof.TelegramApiException;
 import et.telebof.errors.ConnectionError;
 import et.telebof.errors.TelegramError;
@@ -18,13 +18,14 @@ import org.jetbrains.annotations.Nullable;
 
 import java.io.IOException;
 import java.net.Proxy;
+import java.net.UnknownHostException;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 /**
  * <p>Class for sending request</p>
  * @author Natanim
- * @version 1.0.2
+ * @version 1.1.0
  */
 
 public class RequestSender {
@@ -95,40 +96,42 @@ public class RequestSender {
             ResponseBody responseBody = response.body();
             assert responseBody != null;
             String stringResponse = responseBody.string();
-            return Parser.parse(stringResponse, ApiResponse.class);
+            return Util.parse(stringResponse, ApiResponse.class);
         } catch (AssertionError e){
             throw new RuntimeException("Server send back empty response");
+        } catch (UnknownHostException e){
+            throw new ConnectionError(String.format("Unable to send request to %s", request.url().url().getHost()));
         } catch (IOException e){
-            throw new ConnectionError("Unable to send request to api.telegram.org");
+            throw new RuntimeException(e);
         }
     }
 
     public <T, R> Object makeRequest(AbstractBaseRequest<T, R> abstractBase) {
         if (botToken == null || botToken.isEmpty()) throw new TelegramError("Undefined botToken");
-        BotLog.info(String.format("Request: method=%s, url=%s", abstractBase.methodName, getUrl(abstractBase)));
+        BotLog.debug(String.format("Request: method=%s, url=%s", abstractBase.methodName, getUrl(abstractBase)));
         ApiResponse response = postRequest(abstractBase);
-        BotLog.info(String.format("The server returned: %s", response.getResult()));
+        BotLog.debug(String.format("The server returned: %s", response.getResult()));
         if (!response.isOk()) throw new TelegramApiException(response);
         else return response.getResult();
     }
 
     public byte[] downloadFile(String filePath) {
         Request request = new Request.Builder().url(String.format(FILE_URL, botToken, filePath)).build();
-        BotLog.info(String.format("Request: file=%s, url=%s", filePath, request.url()));
+        BotLog.debug(String.format("Request: file=%s, url=%s", filePath, request.url()));
         Response response;
         try {
             response = client.newCall(request).execute();
             assert response.body() != null;
             if (response.code() != 200) throw new IOException(String.format("Error %d! Unable to download file. %s",
                     response.code(), response.body().string()));
-            BotLog.info("The server returned status code: " + response.code());
+            BotLog.debug("The server returned status code: " + response.code());
             return response.body().bytes();
         } catch (AssertionError e){
             throw new RuntimeException("Server send back empty response");
+        } catch (UnknownHostException e){
+            throw new ConnectionError(String.format("Unable to send request to %s", request.url().url().getHost()));
         } catch (IOException e) {
-            if (e.getMessage().contains("Unable to download file."))
-                throw new RuntimeException(e);
-            else throw new ConnectionError("Unable to send request to api.telegram.org");
+            throw new RuntimeException(e);
         }
     }
 }
