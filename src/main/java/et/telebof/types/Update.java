@@ -6,7 +6,7 @@ import java.io.Serializable;
  *
  * @see <a href="https://core.telegram.org/bots/api#Update">Telegram documentation</a>"
  * @author Natanim Negash
- * @version 1.1.2
+ * @version 1.1.0
  */
 
 public class Update extends JsonSerializable implements Serializable {
