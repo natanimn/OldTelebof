@@ -35,7 +35,7 @@ import java.util.logging.Level;
  * @apiNote The main class of the library for interacting with telegram.
  *
  * <p>Using this class you can do: create Handlers, delete webhook and set webhook.
- @author Natanim Negash
+ @author Natanim
  @version 1.2.0
  */
 
