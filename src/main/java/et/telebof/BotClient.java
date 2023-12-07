@@ -33,6 +33,7 @@ import java.util.logging.Level;
 
 /**<h1>BotClient</h1>
  * @apiNote The main class of the library for interacting with telegram.
+ *
  * <p>Using this class you can do: create Handlers, delete webhook and set webhook.
  @author Natanim
  @version 1.2.0
