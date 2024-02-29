@@ -1,6 +1,9 @@
 package et.telebof;
 
+import et.telebof.enums.Updates;
+
 import java.io.File;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
